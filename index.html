@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Arita</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="/your-path-to-your-compiled-css-including-fontawesome/file.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="mouse" aria-hidden="true">
+    <div class="mouse__view"></div>
+  </div>
+
+  <div class="preloader">
+    <span class="preloader__back">Coding</span>
+    <p class="preloader__forward">
+      Front-end developer
+      <br>
+      Olena Redko
+      <span class="preloader__background"></span>
+    </p>
+  </div>
+
+  <input type="hidden" value="1" id="helper-input">
+
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo header__logo">
+          <img class="logo__img" src="img/www.svg" alt="logo">
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link nav__color">Home</a></li>
+            <li class="nav__item"><a href="#works" class="nav__link">My works</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">My skils</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="burger header__burger" id="burger" data-burger aria-label="Open Menu"></button>
+
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <a class="sidebar__link" href="#home" data-section="Home"></a>
+          <a class="sidebar__link" href="#works" data-section="My&nbsp;works"></a>
+          <a class="sidebar__link" href="#skills" data-section="My&nbsp;skills"></a>
+          <a class="sidebar__link" href="#contacts" data-section="Contacts"></a>
+        </div>
+      </div>
+      <h1 class="visually-hidden">Portfolio</h1>
+      <section id="home" class="main-section slide-1">
+        <div class="container">
+          <div class="slides-container">
+            <div class="wrapper">
+              <div class="slides-container__left">
+                <div class="main-section__explore">About me</div>
+                <div class="slides-container__slide slides-container__slide--active">
+                  <div class="slides-container__text">
+                    <h2 class="slides-container__title">Olena Redko</h2>
+                    <div class="designers-info">
+                      <div class="designers-info__country">I'm front-end developer from Ukraine.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slides-container__slide">
+                  <div class="slides-container__text">
+                    <h2 class="slides-container__title slides-container__title--dark">Let's work together! </h2>
+                    <div class="designers-info">
+                      <div class="designers-info__country">Let's build a unique, innovative and ammazing project.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slides-container__slide">
+                  <div class="slides-container__text">
+                    <h2 class="slides-container__title">Let's make something special</h2>
+                    <div class="designers-info">
+                      <div class="designers-info__country">I have serious passion for UI effects, animations and
+                        creating intuitive, dynamic user experiences.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slides-container__slide">
+                  <div class="slides-container__text">
+                    <h2 class="slides-container__title">Contact me</h2>
+                    <div class="designers-info">
+                      <div class="designers-info__country">Please contact me to discuss the project.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="slides-container__bg slide-bg">
+                <div class="slide-bg__inner slide-bg__inner--current">
+                  <a href="#" class="slide-bg__link" data-bg="#5F6769">
+                    <p class="slide-bg__text">
+
+                    </p>
+                  </a>
+                </div>
+                <div class="slide-bg__inner index">
+                  <a href="#" class="slide-bg__link" data-bg="#5F6769">
+                    <p>
+                      I am ready to create a website or application for you with intuitive navigation, transitions and
+                      animations. I write
+                      clean code, minify, and use other techniques to make a site or app load quickly.
+                      <br />
+                      <br />
+                      With so many different devices and platforms coming out, it's important that your website or app
+                      is accessible to users
+                      with different operating systems, browsers, and screen sizes. I will ensure your site is
+                      compatible with a range of
+                      devices and platforms, ensuring a seamless experience for all users.
+                    </p>
+                  </a>
+                </div>
+                <div class="slide-bg__inner">
+                  <a href="#" class="slide-bg__link" data-bg="##5F6769">
+                    <p>If you are looking for someone who can create your website or application, then I am the
+                      best choice for you. I'm ready to work on the following projects:</p>
+                    <br />
+                    <ul>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;eCommerce</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Bussines Website</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Entertaintment</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Portfolio Website</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Media Website</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Nonprofit</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Educational</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Infopreneur</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Personal</li>
+                      <li class="slide-bg__item">&nbsp;&nbsp;&nbsp;Webportal</li>
+                    </ul>
+                  </a>
+                </div>
+                <div class="slide-bg__inner">
+                  <a href="#" class="slide-bg__link" data-bg="#5F6769">
+                    <p>I'm interested in freelancing opportunities. If you have any questions feel free to use the form.
+                    </p>
+                    <br />
+                    <br />
+                    <form class="slide-bg__form" action="submit-form.php" method="post">
+                      <input class="slide-bg__input" type="text" placeholder="Name"><br><br>
+                      <input class="slide-bg__input" type="email" placeholder="Email"><br><br>
+                      <input type="text" class="slide-bg__subject" placeholder="Subject..."><br><br>
+                      <textarea class="slide-bg__message" placeholder="Message:"></textarea><br><br>
+
+                      <input class="slide-bg__btn" type="submit" value="Submit">
+                    </form>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shapes" aria-hidden="true">
+          <div class="shapes__item shapes__item--current">
+            <div class="shapes__content" data-bg="#8A9A97"></div>
+          </div>
+          <div class="shapes__item index">
+            <div class="shapes__content" data-bg="#9ba6a5"></div>
+          </div>
+          <div class="shapes__item">
+            <div class="shapes__content" data-bg="#9fa180"></div>
+          </div>
+          <div class="shapes__item">
+            <div class="shapes__content" data-bg="#acc6aa"></div>
+          </div>
+        </div>
+      </section>
+      <section id="works" class="works">
+        <div class="container">
+          <div class="works__header">
+            <img class="works__img" src="img/14.jpeg" alt="" />
+            <h2 class="works__title">
+              <span aria-hidden="true">My</span>&nbsp;<span aria-hidde="true">New</span>
+              <br>
+              <span aria-hidden="true">&nbsp;&nbsp;&nbsp;Works</span>
+              <span class="sr-only">My New Works</span>
+            </h2>
+          </div>
+          <div class="main">
+            <div class="works__item">
+              <img class="works__item-img" src="img/work1.png" alt="Marina's progect" data-aos="fade-up-right">
+              <div data-aos="fade-left" class="works__box works__box-right">
+                <h3 class="works__box-title">Landing page</h3>
+                <p class="works__text">This site is a collaboration with an experienced and talented designer Maria
+                  Redko. The implementation of this project
+                  allowed me to improve my layout skills. I also improved my knowledge of WordPress.
+                  As you scroll down the page, you will be presented with a visual representation of our content with
+                  images, text and
+                  interactive elements. Our page is designed to be responsive so it will look great on any device, from
+                  desktop to mobile.</p>
+                <a class="works__btn">Check out</a>
+              </div>
+            </div>
+            <div class="works__item works__item-right">
+              <img class="works__item-img" src="img/dictionary.png" alt="dictionary" width="200" height="200"
+                data-aos="fade-up-left">
+              <div data-aos="fade-left" class="works__box">
+                <h3 class="works__box-title">Dictionary-app</h3>
+                <p class="works__text"> Overall, this dictionary app is a great example of how HTML, CSS, JavaScript,
+                  and React can be used
+                  to create a useful and user-friendly application. Dictionary is an application for mobile devices that
+                  will help the user to improve their vocabulary and broaden their
+                  horizons. With this application, the user can easily and quickly look up the meanings of words, as
+                  well as learn new
+                  words and their meanings.</p>
+                <a class="works__btn">Check out</a>
+              </div>
+            </div>
+            <div class="works__item works__item-left">
+              <img data-aos="fade-up-right" class="works__item-img" src="img/weather.png" alt="Weather">
+              <div data-aos="fade-left" class="works__box">
+                <h3 class="works__box-title">Weather-app</h3>
+                <p class="works__text">My first application. It allovs you to view the weather in anycity on the planet
+                  and gives a forecast for 5 days. The
+                  framework Bootstrap was used to create the application. My first application. It allovs you to view
+                  the weather in anycity on the planet and gives a forecast for 5 days. The framework Bootstrap was used
+                  to create the application. The app has a simple, modern design that uses a neutral color palette and
+                  clear typography to make the content easy to
+                  read.</p>
+                <a class="works__btn">Check out</a>
+              </div>
+            </div>
+            <div class="works__item works__item-right">
+              <img class="works__item-img" src="img/auto.png" alt="auto" width="200" height="200"
+                data-aos="fade-up-left">
+              <div data-aos="fade-left" class="works__box">
+                <h3 class="works__box-title">Landing page</h3>
+                <p class="works__text">This landing page is built using HTML, the foundation of all web development.
+                  I've used HTML to structure our content, making it easier to read and navigate. HTML also allowed me
+                  to create links to external resources such as social media
+                  profiles and contact details.
+                  My landing page design is made possible by the power of CSS. I used CSS to style the content, creating
+                  a visually
+                  appealing and cohesive design. From the layout of the text and images to the designer's choice of
+                  colors and fonts, CSS
+                  allowed me to bring this vision to life.</p>
+                <a class="works__btn">Check out</a>
+              </div>
+            </div>
+            <div class="works__item works__item-left">
+              <img class="works__item-img" src="img/example.png" alt="" width="200" height="200">
+              <div data-aos="fade-left" class="works__box">
+                <h3 class="works__box-title">Landing page</h3>
+                <p class="works__text">This landing page is built using HTML, the foundation of all web development.
+                  I've used HTML to structure our content, making it easier to read and navigate. HTML also allowed me
+                  to create links to external resources such as social media
+                  profiles and contact details.
+                  My landing page design is made possible by the power of CSS. I used CSS to style the content, creating
+                  a visually
+                  appealing and cohesive design. From the layout of the text and images to the designer's choice of
+                  colors and fonts, CSS
+                  allowed me to bring this vision to life.
+                </p>
+                <a class="works__btn">Check out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="benefits">
+        <div class="container wraper-container">
+          <h2 class="benefits-title">My skills & tools</h2>
+          <div class="benefits-box">
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-html5 icon-benefits"></i>
+              <p class="benefits-text">HTML5</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-css3 icon-benefits"></i>
+              <p class="benefits-text">CSS</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-js icon-benefits"></i>
+              <p class="benefits-text">JavaScript</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img img-fluid" src="img/vsc.svg" alt="Editor">
+              <p class="benefits-text">Editor</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-github icon-benefits"></i>
+              <p class="benefits-text">GitHub</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-bootstrap icon-benefits"></i>
+              <p class="benefits-text">Bootstrap</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img img-fluid" src="img/api.svg" alt="API">
+              <p class="benefits-text">API</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img img-fluid" src="img/hosting.svg" alt="Hosting">
+              <p class="benefits-text">Hosting</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img img-fluid" src="img/flexbox.svg" alt="Flexbox">
+              <p class="benefits-text">Flexbox</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img img-fluid" src="img/grid.svg" alt="Grid">
+              <p class="benefits-text">Grid</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-gulp icon-benefits"></i>
+              <p class="benefits-text">Gulp</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img" src="img/responsive.svg" alt="Responsive">
+              <p class="benefits-text">Responsive</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-figma icon-benefits"></i>
+              <p class="benefits-text">Figma</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img" src="img/photoshop.svg" alt="Photoshop">
+              <p class="benefits-text">Photoshop</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img" src="img/seo.svg" alt="SEO">
+              <p class="benefits-text">SEO</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <img class="benefits-img" src="img/jquery.svg" alt="jQuery">
+              <p class="benefits-text">jQuery</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-react icon-benefits"></i>
+              <p class="benefits-text">React</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-php icon-benefits"></i>
+              <p class="benefits-text">PHP</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-wordpress-simple icon-benefits"></i>
+              <p class="benefits-text">WordPress</p>
+            </div>
+            <div class="benefits-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+              <i class="fa-brands fa-node icon-benefits"></i>
+              <p class="benefits-text">NodeJS</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview">
+          <h2 class="preview-title">My certificates</h2>
+          <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/certificate6.jpg" alt="Certificate">
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/photo2.jpg" alt="Certificate">
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/result.png" alt="Certificate">
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/photo1.jpg" alt="Certificate">
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/certificate2.jpg" alt="Certificate">
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-sliders__image">
+                  <img src="img/certificate1.jpg" alt="Certificate">
+                </div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <a class="swiper-pagination"></a>
+
+            <!-- If we need navigation buttons -->
+            <a href="#" class="swiper-button-prev"></a>
+            <a href="#" class="swiper-button-next"></a>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="contacts__top">
+            <div class="contacts__content">Let's</div>
+            <div class="contacts__title">Tell me about your project</div>
+            <div class="contacts__descr">Let’s do to talk about our future collaboration.</div>
+          </div>
+          <div class="contacts__box">
+            <div class="contacts__left">
+              <p class="contacts__left-title">
+                Contacts me
+              </p>
+              <form class="contacts__left__form" action="submit-form.php" method="post">
+                <input class="contacts__left-input" type="text" placeholder="Name"><br><br>
+                <input class="contacts__left-input" type="email" placeholder="Email"><br><br>
+                <textarea class="contacts__left-message" placeholder="Message:"></textarea><br><br>
+
+                <btn class="contacts__left-btn" type="submit" value="Submit">Send message</btn>
+              </form>
+            </div>
+            <div class="contacts__right">
+              <p class="contacts__right-title">
+                Contact info
+              </p>
+              <div class="contacts__right-mail">
+                <p class="contacts__right-descr">
+                  Email
+                </p>
+                <a class="contacts__right-mail" href="mailto:o.redjko@gmail.com"
+                  title="Email Olena Redko">o.redjko@gmail.com</a>
+              </div>
+              <div class="contacts__right-phone">
+                <p class="contacts__right-descr">
+                  Phone
+                </p>
+                <a class="contacts__right-link" href="tel:+380961917439">+38 (096) 191-74-39</a>
+              </div>
+              <div class="contacts__right-phone">
+                <p class="contacts__right-descr">
+                  My work profile
+                </p>
+                <a class="contacts__right-link" title="Upwork Olena Redko"
+                  href="https://www.upwork.com/freelancers/~01f9566558232de0b6" target="_blank">Upwork</a>
+              </div>
+              <div class="contacts__right-social">
+                <p class="contacts__right-descr">
+                  Social
+                </p>
+                <div class="contacts__right-icons">
+                  <a href="https://www.linkedin.com/in/olena-redko-673903146/" class="contacts__right-link"
+                    title="Linkedin Olena Redko" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.instagram.com/redkoalena3522/" class="contacts__right-link"
+                    title="Instagram Olena Redko" target="_blank"><i class="fa-brands fa-instagram"
+                      style="color: #ffffff;"></i></a>
+                  <a href="https://www.facebook.com/o.redjko/" class="contacts__right-link" title="Facebook Olena Redko"
+                    target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="navbar navbar__open">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="#home" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#works" class="navbar__link">My works</a></li>
+        <li class="navbar__item"><a href="#skills" class="navbar__link">My skils</a></li>
+        <li class="navbar__item"><a href="#contacts" class="navbar__link">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        © 2023,Portfolio.This website was coded by Olena Redko
+      </div>
+    </div>
+  </footer>
+  <script data-search-pseudo-elements src="https://kit.fontawesome.com/f737751420.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="libs/bezier.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="libs/swiped-events.min.js"></script>
+  <script src="libs/gsap.min.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/start-animation.js"></script>
+  <script src="js/mouse.js"></script>
+  <script src="js/bg-slides.js"></script>
+  <script src="js/images-slides.js"></script>
+  <script src="js/text-slides.js"></script>
+  <script src="js/shapes-slides.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
