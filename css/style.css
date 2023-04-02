@@ -835,6 +835,7 @@ a.nav__link:hover::before {
 .benefits {
   padding-top: 30px;
   padding-bottom: 20px;
+  background-color: #000;
 }
 .benefits-title {
   font-family: 'Merriweather', sans-serif;
